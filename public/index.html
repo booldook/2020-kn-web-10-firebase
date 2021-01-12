@@ -15,7 +15,12 @@
 		<div class="container">
 			<button id="btLogin" class="btn btn-primary">로그인</button>
 			<button id="btLogout" class="btn btn-primary">로그아웃</button>
-			<button id="btLogout" class="btn btn-primary">데이터추가</button>
+			<form onsubmit="return onSubmit(this);">
+				<div class="form-inline my-3">
+					<input type="text" name="title" class="form-control" placeholder="제목을 입력하세요.">
+					<button class="btn btn-primary">데이터추가</button>
+				</div>
+			</form>
 			<div class="header"></div>
 			<div class="wrapper"></div>
 		</div>
