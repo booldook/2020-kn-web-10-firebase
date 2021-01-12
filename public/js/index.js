@@ -8,8 +8,8 @@ $("#btLogin").click(onLogin);
 $("#btLogout").click(onLogout);
 
 function onAdd(r) {
-	var html = '<p id="'+r.key+'">'+r.val().title+'&nbsp;';
-	html += '<i onclick="onDelete(this);">삭제</i></p>';
+	var html = '<p id="'+r.key+'">'+r.val().title;
+	html += '<i onclick="onDelete(this);" class="ml-5"`>`삭제</i></p>';
 	$('.wrapper').prepend(html);
 }
 
